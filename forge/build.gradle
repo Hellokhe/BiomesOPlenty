@@ -93,7 +93,7 @@ sourceSets.each {
 curseforge {
     apiKey = project.findProperty('curseApiKey') ?: 'unset'
     project {
-        id = mod_curseforge_id
+        id = mod_curseforge_id h
 
         if (changelog_file.exists()) {
             changelog = changelog_file
